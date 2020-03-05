@@ -10,7 +10,15 @@ import UIKit
 
 class CustomerListTableViewController: UIViewController {
 
+    @IBOutlet weak var tblCustomer: UITableView!
     @IBOutlet weak var lblWelcome: UILabel!
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+
+        self.tabBarController?.navigationItem.hidesBackButton = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefault = UserDefaults.standard
@@ -23,6 +31,7 @@ class CustomerListTableViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+   
     
 
     /*
