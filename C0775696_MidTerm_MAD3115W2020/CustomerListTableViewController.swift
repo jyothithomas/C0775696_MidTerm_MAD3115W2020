@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class CustomerListTableViewController: UIViewController {
 
     @IBOutlet weak var lblWelcome: UILabel!
     override func viewDidLoad() {
