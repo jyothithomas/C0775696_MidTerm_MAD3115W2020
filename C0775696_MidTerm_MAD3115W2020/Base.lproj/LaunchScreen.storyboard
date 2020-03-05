@@ -29,8 +29,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-video-conference-96.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-M6-PYf">
-                                <rect key="frame" x="98" y="347" width="218" height="160"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-city-buildings-48" translatesAutoresizingMaskIntoConstraints="NO" id="KZm-lw-vPz">
+                                <rect key="frame" x="87" y="362" width="203" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -44,6 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-video-conference-96.png" width="96" height="96"/>
+        <image name="icons8-city-buildings-48" width="48" height="48"/>
     </resources>
 </document>
