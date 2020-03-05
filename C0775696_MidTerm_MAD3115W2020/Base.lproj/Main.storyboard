@@ -51,8 +51,8 @@
                                     <segue destination="iyX-yH-gBO" kind="show" id="D7F-wB-Sj7"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-KL-x7D">
-                                <rect key="frame" x="72" y="375" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2.png" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-KL-x7D">
+                                <rect key="frame" x="70" y="391" width="226" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -61,6 +61,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="oka-at-a8i"/>
                     <connections>
+                        <outlet property="imgLogin" destination="vJP-KL-x7D" id="fEt-UH-WF7"/>
                         <outlet property="signInPassword" destination="VKL-A7-VCi" id="CY9-dD-I7U"/>
                         <outlet property="signInUsernameField" destination="x7h-te-3KB" id="Hbs-0c-U55"/>
                         <outlet property="switchState" destination="xvq-Jp-97A" id="tfN-We-6dh"/>
@@ -117,4 +118,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img2.png" width="48" height="48"/>
+    </resources>
 </document>

@@ -12,13 +12,28 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var switchState: UISwitch!
     @IBOutlet weak var signInUsernameField: UITextField!
+    @IBOutlet weak var imgLogin: UIImageView!
     
     @IBOutlet weak var signInPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        imgLogin.image = UIImage(named: "img2")
+        getRememberMeValues()
     }
-    
+    private func getRememberMeValues()
+    {
+        let userDefault = UserDefaults.standard
+        
+        if let userName = userDefault.string(forKey: "userEmail")
+        {
+            signInUsernameField.text = userName
+            
+            if let pwd = userDefault.string(forKey: "userPassword")
+            {
+                signInPassword.text = pwd
+            }
+        }
+    }
     @IBAction func btnSignin(_ sender: UIButton) {
         
         if self.signInUsernameField.text == "jyothi05" && self.signInPassword.text == "jyothi05"
