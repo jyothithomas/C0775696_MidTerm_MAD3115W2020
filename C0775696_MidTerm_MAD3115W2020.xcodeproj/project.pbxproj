@@ -13,8 +13,6 @@
 		9B896B332410537F00E4F1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B896B312410537F00E4F1C6 /* Main.storyboard */; };
 		9B896B352410538100E4F1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B896B342410538100E4F1C6 /* Assets.xcassets */; };
 		9B896B382410538100E4F1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B896B362410538100E4F1C6 /* LaunchScreen.storyboard */; };
-		9BC49CC224119E9B009FEA2B /* icons8-restaurant-table-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC49CC124119E9B009FEA2B /* icons8-restaurant-table-48.png */; };
-		9BC49CC424119EA7009FEA2B /* icons8-city-buildings-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC49CC324119EA7009FEA2B /* icons8-city-buildings-48.png */; };
 		9BC49CC62411A55F009FEA2B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC49CC52411A55F009FEA2B /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +25,6 @@
 		9B896B342410538100E4F1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B896B372410538100E4F1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B896B392410538100E4F1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BC49CC124119E9B009FEA2B /* icons8-restaurant-table-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-restaurant-table-48.png"; path = "../../../icons8-restaurant-table-48.png"; sourceTree = "<group>"; };
-		9BC49CC324119EA7009FEA2B /* icons8-city-buildings-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-city-buildings-48.png"; path = "../../../icons8-city-buildings-48.png"; sourceTree = "<group>"; };
 		9BC49CC52411A55F009FEA2B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = C0775696_MidTerm_MAD3115W2020/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -62,7 +58,6 @@
 		9B896B2A2410537F00E4F1C6 /* C0775696_MidTerm_MAD3115W2020 */ = {
 			isa = PBXGroup;
 			children = (
-				9B896B3F2410554100E4F1C6 /* Images */,
 				9B896B2B2410537F00E4F1C6 /* AppDelegate.swift */,
 				9B896B2D2410537F00E4F1C6 /* SceneDelegate.swift */,
 				9B896B2F2410537F00E4F1C6 /* LoginViewController.swift */,
@@ -73,15 +68,6 @@
 				9B896B392410538100E4F1C6 /* Info.plist */,
 			);
 			path = C0775696_MidTerm_MAD3115W2020;
-			sourceTree = "<group>";
-		};
-		9B896B3F2410554100E4F1C6 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				9BC49CC324119EA7009FEA2B /* icons8-city-buildings-48.png */,
-				9BC49CC124119E9B009FEA2B /* icons8-restaurant-table-48.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B896B382410538100E4F1C6 /* LaunchScreen.storyboard in Resources */,
-				9BC49CC224119E9B009FEA2B /* icons8-restaurant-table-48.png in Resources */,
 				9B896B352410538100E4F1C6 /* Assets.xcassets in Resources */,
-				9BC49CC424119EA7009FEA2B /* icons8-city-buildings-48.png in Resources */,
 				9B896B332410537F00E4F1C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

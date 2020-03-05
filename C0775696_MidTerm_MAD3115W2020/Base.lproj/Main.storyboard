@@ -51,7 +51,7 @@
                                     <segue destination="iyX-yH-gBO" kind="show" id="D7F-wB-Sj7"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-restaurant-table-48" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-KL-x7D">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-KL-x7D">
                                 <rect key="frame" x="72" y="375" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -117,7 +117,4 @@
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icons8-restaurant-table-48" width="48" height="48"/>
-    </resources>
 </document>
