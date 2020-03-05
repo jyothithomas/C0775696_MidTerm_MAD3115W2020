@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
         }
         else
         {
-            let alert = UIAlertController(title: "Error", message: "Try again, User Email / Password Invalid", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "Sorry, Try again, User Email / Password Invalid", preferredStyle: .alert)
             
             let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
             
