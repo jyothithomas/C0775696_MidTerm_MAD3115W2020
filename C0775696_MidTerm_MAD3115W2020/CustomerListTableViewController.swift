@@ -50,7 +50,7 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
             let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell")
             
             let customer = customerNames[indexPath.row]
-            cell?.textLabel?.text = customer.firstName
+            cell?.textLabel?.text = customer.fullName
             //cell?.detailTextLabel?.text = customer.
             //cell?.imageView?.image = country.flag
             return cell!
@@ -58,7 +58,7 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
         {
             let c = customerNames[indexPath.row]
-            print(c.firstName)
+            print(c.fullName)
         }
     }
     
