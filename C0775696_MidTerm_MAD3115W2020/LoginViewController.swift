@@ -17,7 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgLogin.image = UIImage(named: "img2")
+        //imgLogin.image = UIImage(named: "img2")
         getRememberMeValues()
     }
     private func getRememberMeValues()
