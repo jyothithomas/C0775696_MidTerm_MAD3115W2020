@@ -16,6 +16,7 @@
 		9BC3242E2411B514003608EB /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3242C2411B514003608EB /* img1.png */; };
 		9BC3242F2411B514003608EB /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BC3242D2411B514003608EB /* img2.png */; };
 		9BC324572411D9E8003608EB /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC324562411D9E8003608EB /* Customer.swift */; };
+		9BC324592411DB07003608EB /* DataSingelton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC324582411DB07003608EB /* DataSingelton.swift */; };
 		9BC49CC62411A55F009FEA2B /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC49CC52411A55F009FEA2B /* CustomerListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		9BC3242C2411B514003608EB /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img1.png; path = ../../../../Downloads/img1.png; sourceTree = "<group>"; };
 		9BC3242D2411B514003608EB /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img2.png; path = ../../../../Downloads/img2.png; sourceTree = "<group>"; };
 		9BC324562411D9E8003608EB /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9BC324582411DB07003608EB /* DataSingelton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSingelton.swift; sourceTree = "<group>"; };
 		9BC49CC52411A55F009FEA2B /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomerListTableViewController.swift; path = C0775696_MidTerm_MAD3115W2020/CustomerListTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				9B896B362410538100E4F1C6 /* LaunchScreen.storyboard */,
 				9B896B392410538100E4F1C6 /* Info.plist */,
 				9BC324562411D9E8003608EB /* Customer.swift */,
+				9BC324582411DB07003608EB /* DataSingelton.swift */,
 			);
 			path = C0775696_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				9B896B302410537F00E4F1C6 /* LoginViewController.swift in Sources */,
 				9BC324572411D9E8003608EB /* Customer.swift in Sources */,
 				9BC49CC62411A55F009FEA2B /* CustomerListTableViewController.swift in Sources */,
+				9BC324592411DB07003608EB /* DataSingelton.swift in Sources */,
 				9B896B2C2410537F00E4F1C6 /* AppDelegate.swift in Sources */,
 				9B896B2E2410537F00E4F1C6 /* SceneDelegate.swift in Sources */,
 			);
