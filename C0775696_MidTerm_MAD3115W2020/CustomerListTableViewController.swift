@@ -12,6 +12,7 @@ class CustomerListTableViewController: UIViewController {
 
     @IBOutlet weak var tblCustomer: UITableView!
     @IBOutlet weak var lblWelcome: UILabel!
+    var customerNames:[Customer] = []
     
     override func viewWillAppear(_ animated: Bool)
     {
@@ -21,6 +22,7 @@ class CustomerListTableViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        customerNames = DataSingelton.getInstance().getAllCustomers()
         let userDefault = UserDefaults.standard
         
         if let username = userDefault.string(forKey: "userEmail")
@@ -30,8 +32,35 @@ class CustomerListTableViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+}
 
-   
+extension CustomerListTableViewController: UITableViewDataSource, UITableViewDelegate
+    {
+        func numberOfSections(in tableView: UITableView) -> Int
+        {
+            return 1
+        }
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+        {
+            return customerNames.count
+        }
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell")
+            
+            let customer = customerNames[indexPath.row]
+            cell?.textLabel?.text = customer.firstName
+            //cell?.detailTextLabel?.text = customer.
+            //cell?.imageView?.image = country.flag
+            return cell!
+        }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+        {
+            let c = customerNames[indexPath.row]
+            print(c.firstName)
+        }
+    }
     
 
     /*
@@ -43,5 +72,3 @@ class CustomerListTableViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
