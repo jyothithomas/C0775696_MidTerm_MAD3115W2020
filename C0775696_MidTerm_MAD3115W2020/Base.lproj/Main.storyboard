@@ -101,18 +101,31 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="iyX-yH-gBO" id="c0b-Uu-Nmx"/>
+                                    <outlet property="delegate" destination="iyX-yH-gBO" id="BUL-CA-xfv"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Qxh-14-ed2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Customer Details" id="PBK-Ef-nZo"/>
+                    <navigationItem key="navigationItem" title="Customer Details" id="PBK-Ef-nZo">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="PIh-wR-lal">
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logOutFromAnyScreen:" destination="UAp-ZQ-0hU" id="xXu-Cp-eYl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="addCustomer" image="person.crop.circle.badge.plus" catalog="system" id="Ppi-98-ghG"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblWelcome" destination="8EK-TW-RHA" id="uvE-cq-3QT"/>
                         <outlet property="tblCustomer" destination="9tb-gu-8iR" id="hYg-Ws-b9h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGY-ie-x6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UAp-ZQ-0hU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1756.521739130435" y="138.61607142857142"/>
         </scene>
@@ -137,5 +150,6 @@
     </scenes>
     <resources>
         <image name="img2.png" width="48" height="48"/>
+        <image name="person.crop.circle.badge.plus" catalog="system" width="64" height="50"/>
     </resources>
 </document>

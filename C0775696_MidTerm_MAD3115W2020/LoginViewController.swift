@@ -63,13 +63,16 @@ class LoginViewController: UIViewController {
         }
             
 }
-   /* @IBAction func unWindLogoutFromAnyScreen(storyboardSegue: UIStoryboardSegue)
+    
+    
+    
+    @IBAction func unWindLogoutFromAnyScreen(storyboardSegue: UIStoryboardSegue)
     {
         print("Logout")
-        let s = storyboardSegue.source as! WelcomeViewController
+        let s = storyboardSegue.source as! CustomerListTableViewController
         print(s.lblWelcome.text!)
         
         signInUsernameField.text = ""
         signInPassword.text = ""
-    }*/
+    }
 }

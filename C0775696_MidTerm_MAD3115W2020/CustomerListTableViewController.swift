@@ -14,14 +14,12 @@ class CustomerListTableViewController: UIViewController {
     @IBOutlet weak var lblWelcome: UILabel!
     var customerNames:[Customer] = []
     
-    override func viewWillAppear(_ animated: Bool)
-    {
-        super.viewWillAppear(animated)
 
-        self.tabBarController?.navigationItem.hidesBackButton = true
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.navigationController?.hidesBarsOnTap = true
+        //Hide Back Button from navigation Bar
+        self.navigationItem.hidesBackButton = true
         customerNames = DataSingelton.getInstance().getAllCustomers()
         let userDefault = UserDefaults.standard
         
