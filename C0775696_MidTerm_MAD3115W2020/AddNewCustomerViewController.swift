@@ -10,13 +10,26 @@ import UIKit
 
 class AddNewCustomerViewController: UIViewController {
 
+    @IBOutlet weak var txtCustomerId: UITextField!
+    @IBOutlet weak var txtCustomerfirstName: UITextField!
+    @IBOutlet weak var txtCustomerlastName: UITextField!
+    @IBOutlet weak var txtCustomerEmailid: UITextField!
+    var newCustomer:[Customer] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func btnAddCustomer(_ sender: UIButton) {
+        //txtCustomerId.text =
+    
+    }
+    
     /*
     // MARK: - Navigation
 

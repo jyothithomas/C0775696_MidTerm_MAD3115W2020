@@ -198,6 +198,9 @@
                                 <rect key="frame" x="142" y="377" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Customer"/>
+                                <connections>
+                                    <action selector="btnAddCustomer:" destination="tfq-Gv-NXZ" eventType="touchUpInside" id="Cya-nW-8uf"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.2.square.stack" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-yY-H7G">
                                 <rect key="frame" x="140" y="426" width="146" height="122"/>
@@ -208,6 +211,12 @@
                         <viewLayoutGuide key="safeArea" id="nke-yL-CWb"/>
                     </view>
                     <navigationItem key="navigationItem" id="dXS-ES-HY7"/>
+                    <connections>
+                        <outlet property="txtCustomerEmailid" destination="9WB-cU-pcL" id="3PP-1B-rkR"/>
+                        <outlet property="txtCustomerId" destination="eR6-CU-FLO" id="1b7-ca-9TH"/>
+                        <outlet property="txtCustomerfirstName" destination="sLX-kA-DtQ" id="ykT-9G-5ub"/>
+                        <outlet property="txtCustomerlastName" destination="dJv-Bj-CIb" id="vNX-Sl-WrM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kMZ-pC-oVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
