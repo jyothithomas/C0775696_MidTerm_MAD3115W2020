@@ -23,8 +23,10 @@ class AddNewCustomerViewController: UIViewController {
         let newCustomerId = txtCustomerId.text ?? ""
         let newCustomerFirstName = txtCustomerfirstName.text ?? ""
         let newCustomerLastName = txtCustomerlastName.text ?? ""
+        //guard let txtCustomerEmailid.text?.emailValid() == true
+        //{
         let newCustomerEmailId = txtCustomerEmailid.text ?? ""
-        
+        //}
         if txtCustomerId.text == ""
         {
             showAlertMessage(message: "Enter customer ID")
@@ -37,7 +39,7 @@ class AddNewCustomerViewController: UIViewController {
         {
             showAlertMessage(message: "Enter Customer Last name")
         }
-        else if txtCustomerEmailid.text == ""
+        else if txtCustomerEmailid.text == "" || txtCustomerEmailid.text?.emailValid() == false
         {
             showAlertMessage(message: "Enter Customer EmailID")
         }
