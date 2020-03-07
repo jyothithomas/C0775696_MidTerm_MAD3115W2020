@@ -57,6 +57,7 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
         {
             let c = customerNames[indexPath.row]
             print(c.fullName)
+            
         }
     
     }
