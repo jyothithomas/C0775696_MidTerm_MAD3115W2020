@@ -41,7 +41,7 @@ class AddNewCustomerViewController: UIViewController {
         }
         else if txtCustomerEmailid.text == "" || txtCustomerEmailid.text?.emailValid() == false
         {
-            showAlertMessage(message: "Enter Customer Valid EmailID")
+            showAlertMessage(message: "Enter Valid EmailID")
         }
         else
         {

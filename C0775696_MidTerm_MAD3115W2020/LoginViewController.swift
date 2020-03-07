@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         //imgLogin.image = UIImage(named: "img2")
         getRememberMeValues()
+        
     }
     private func getRememberMeValues()
     {
@@ -35,9 +36,13 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func btnSignin(_ sender: UIButton) {
+        
+        //self.showSpinner(onView: self.view)
                 
-        if self.signInUsernameField.text == "jyothi05" && self.signInPassword.text == "jyothi05"
+        if self.signInUsernameField.text == "jyothi05@mail.com" && self.signInPassword.text == "jyothi05"
         {
+            if signInUsernameField.text?.emailValid() == true
+            {
             let userDefault = UserDefaults.standard
             if switchState.isOn
             {
@@ -50,7 +55,14 @@ class LoginViewController: UIViewController {
                 userDefault.removeObject(forKey: "userEmail")
                 userDefault.removeObject(forKey: "userPassword")
             }
+            }
+            else
+            {
+                showAlertMessage(message: "Invalid UserName")
+            }
+            
         }
+            
         else
         {
             if self.signInUsernameField.text == ""
@@ -66,6 +78,10 @@ class LoginViewController: UIViewController {
             showAlertMessage(message: "Try again, User Email / Password Invalid")
             }
         }
+            
+        
+        //self.removeSpinner()
+        
             
 }
     

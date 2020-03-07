@@ -59,6 +59,7 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
             print(c.fullName)
             self.performSegue(withIdentifier: "segueBillDetails", sender: self)
             
+            
         }
     
     }
