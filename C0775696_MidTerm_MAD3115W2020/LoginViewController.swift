@@ -74,6 +74,7 @@ class LoginViewController: UIViewController {
         let alert = UIAlertController(title: "Sorry", message: message, preferredStyle: .alert)
         
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
         self.present(alert, animated: true)
     }
     

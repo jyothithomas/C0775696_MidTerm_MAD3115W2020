@@ -20,22 +20,42 @@ class AddNewCustomerViewController: UIViewController {
     }
     
     @IBAction func btnAddCustomer(_ sender: UIButton) {
+        let newCustomerId = txtCustomerId.text ?? ""
+        let newCustomerFirstName = txtCustomerfirstName.text ?? ""
+        let newCustomerLastName = txtCustomerlastName.text ?? ""
+        let newCustomerEmailId = txtCustomerEmailid.text ?? ""
         
-        if self.txtCustomerId.text != ""
+        if txtCustomerId.text == ""
         {
-        let newCustomerId = txtCustomerId.text!
+            showAlertMessage(message: "Enter customer ID")
+        }
+        else if txtCustomerfirstName.text == ""
+        {
+            showAlertMessage(message: "Enter Customer First name ")
+        }
+        else if txtCustomerlastName.text == ""
+        {
+            showAlertMessage(message: "Enter Customer Last name")
+        }
+        else if txtCustomerEmailid.text == ""
+        {
+            showAlertMessage(message: "Enter Customer EmailID")
         }
         else
         {
-            
-        }
-        let newCustomerFirstName = txtCustomerfirstName.text!
-        let newCustomerLastName = txtCustomerlastName.text!
-        let newCustomerEmailId = txtCustomerEmailid.text!
-        
         
         DataSingelton.getInstance().addCustomer(customer: Customer(customerID: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailID: newCustomerEmailId))
+        }
     
     }
+    
+    func showAlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Sorry", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
+    
     
 }
