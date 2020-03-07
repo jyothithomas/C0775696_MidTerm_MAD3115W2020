@@ -21,10 +21,18 @@ class AddNewCustomerViewController: UIViewController {
     
     @IBAction func btnAddCustomer(_ sender: UIButton) {
         
+        if self.txtCustomerId.text != ""
+        {
         let newCustomerId = txtCustomerId.text!
+        }
+        else
+        {
+            
+        }
         let newCustomerFirstName = txtCustomerfirstName.text!
         let newCustomerLastName = txtCustomerlastName.text!
         let newCustomerEmailId = txtCustomerEmailid.text!
+        
         
         DataSingelton.getInstance().addCustomer(customer: Customer(customerID: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailID: newCustomerEmailId))
     

@@ -30,6 +30,7 @@ class DataSingelton
     }
     func loadData()
     {
+        
         customerList.updateValue(Customer(customerID: "C01", firstName: "Jyothi", lastName: "Thomas", emailID: "jojamz123@gmail.com"), forKey: "C01")
         customerList.updateValue(Customer(customerID: "C02", firstName: "James", lastName: "Thomas", emailID: "jamz3@mail.com"), forKey: "C02")
         customerList.updateValue(Customer(customerID: "C03", firstName: "Raelyn", lastName: "James", emailID: "rae_lyn@gmail.com"), forKey: "C03")

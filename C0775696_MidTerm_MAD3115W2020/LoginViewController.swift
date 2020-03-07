@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func btnSignin(_ sender: UIButton) {
-        
+                
         if self.signInUsernameField.text == "jyothi05" && self.signInPassword.text == "jyothi05"
         {
             let userDefault = UserDefaults.standard
@@ -53,16 +53,29 @@ class LoginViewController: UIViewController {
         }
         else
         {
-            let alert = UIAlertController(title: "Error", message: "Sorry, Try again, User Email / Password Invalid", preferredStyle: .alert)
-            
-            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            
-            alert.addAction(okButton)
-            
-            self.present(alert, animated: true)
+            if self.signInUsernameField.text == ""
+            {
+                showAlertMessage(message: "Enter UserName")
+            }
+            else if self.signInPassword.text == ""
+            {
+                showAlertMessage(message: "enter Password")
+            }
+            else
+            {
+            showAlertMessage(message: "Try again, User Email / Password Invalid")
+            }
         }
             
 }
+    
+    func showAlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Sorry", message: message, preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        self.present(alert, animated: true)
+    }
     
     
     
