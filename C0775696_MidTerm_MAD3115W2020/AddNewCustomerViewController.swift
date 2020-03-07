@@ -41,14 +41,14 @@ class AddNewCustomerViewController: UIViewController {
         }
         else if txtCustomerEmailid.text == "" || txtCustomerEmailid.text?.emailValid() == false
         {
-            showAlertMessage(message: "Enter Customer EmailID")
+            showAlertMessage(message: "Enter Customer Valid EmailID")
         }
         else
         {
-            if newCustomerEmailId.emailValid() == true
-            {
+           // if newCustomerEmailId.emailValid() == true
+           // {
         DataSingelton.getInstance().addCustomer(customer: Customer(customerID: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailID: newCustomerEmailId))
-            }
+           // }
         }
     
     }
