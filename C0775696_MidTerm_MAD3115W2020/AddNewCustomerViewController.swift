@@ -45,10 +45,7 @@ class AddNewCustomerViewController: UIViewController {
         }
         else
         {
-           // if newCustomerEmailId.emailValid() == true
-           // {
         DataSingelton.getInstance().addCustomer(customer: Customer(customerID: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailID: newCustomerEmailId))
-           // }
         }
     
     }

@@ -28,6 +28,23 @@ class DataSingelton
     func getAllCustomers() -> [Customer]{
         return Array(customerList.values)
     }
+//    func getCustomerById(customerId: Int) -> Customer?
+//    {
+//    var flag = 0
+//    for i in customerList
+//      {
+//         if customerId == i.customerId
+//          {
+//          flag = 1
+//          loadData()
+//             return i
+//          }
+//      }
+//      if (flag == 0){ // Validating customer if exist otherwise nil and proper message is displayed
+//        print("\n No Customer with this CustomerId \(customerId) exists")
+//         return nil
+//      }
+//    }
     
     func loadData()
     {
