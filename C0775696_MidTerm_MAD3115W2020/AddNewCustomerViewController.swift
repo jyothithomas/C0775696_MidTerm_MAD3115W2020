@@ -23,10 +23,10 @@ class AddNewCustomerViewController: UIViewController {
         let newCustomerId = txtCustomerId.text ?? ""
         let newCustomerFirstName = txtCustomerfirstName.text ?? ""
         let newCustomerLastName = txtCustomerlastName.text ?? ""
-        //guard let txtCustomerEmailid.text?.emailValid() == true
-        //{
+        //guard case let txtCustomerEmailid.text?.emailValid() == true
+        
         let newCustomerEmailId = txtCustomerEmailid.text ?? ""
-        //}
+        
         if txtCustomerId.text == ""
         {
             showAlertMessage(message: "Enter customer ID")
@@ -45,8 +45,10 @@ class AddNewCustomerViewController: UIViewController {
         }
         else
         {
-        
+            if newCustomerEmailId.emailValid() == true
+            {
         DataSingelton.getInstance().addCustomer(customer: Customer(customerID: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailID: newCustomerEmailId))
+            }
         }
     
     }
