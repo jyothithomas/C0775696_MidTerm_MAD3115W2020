@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0775696_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oka-at-a8i"/>
+                    <navigationItem key="navigationItem" title="Login" id="oka-at-a8i"/>
                     <connections>
                         <outlet property="imgLogin" destination="vJP-KL-x7D" id="fEt-UH-WF7"/>
                         <outlet property="signInPassword" destination="VKL-A7-VCi" id="CY9-dD-I7U"/>
@@ -75,7 +75,7 @@
         <!--Customer Details-->
         <scene sceneID="ySY-69-rMd">
             <objects>
-                <viewController id="iyX-yH-gBO" customClass="CustomerListTableViewController" customModule="C0775696_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="iyX-yH-gBO" customClass="CustomerListTableViewController" customModule="C0775696_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dAF-dd-LXY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +128,7 @@
                     <connections>
                         <outlet property="lblWelcome" destination="8EK-TW-RHA" id="uvE-cq-3QT"/>
                         <outlet property="tblCustomer" destination="9tb-gu-8iR" id="hYg-Ws-b9h"/>
+                        <segue destination="l1U-3g-mQE" kind="show" identifier="segueBillDetails" id="Cir-75-la2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGY-ie-x6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -135,7 +136,7 @@
             </objects>
             <point key="canvasLocation" x="1756.521739130435" y="138.61607142857142"/>
         </scene>
-        <!--Add New Customer View Controller-->
+        <!--Add Customer-->
         <scene sceneID="kaL-UP-gFg">
             <objects>
                 <viewController id="tfq-Gv-NXZ" customClass="AddNewCustomerViewController" customModule="C0775696_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
@@ -211,7 +212,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="nke-yL-CWb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dXS-ES-HY7"/>
+                    <navigationItem key="navigationItem" title="Add Customer" id="dXS-ES-HY7"/>
                     <connections>
                         <outlet property="txtCustomerEmailid" destination="9WB-cU-pcL" id="3PP-1B-rkR"/>
                         <outlet property="txtCustomerId" destination="eR6-CU-FLO" id="1b7-ca-9TH"/>
@@ -223,7 +224,7 @@
             </objects>
             <point key="canvasLocation" x="2414.4927536231885" y="139.95535714285714"/>
         </scene>
-        <!--Show Bill Details View Controller-->
+        <!--Customer Bill Details-->
         <scene sceneID="9EO-ak-RwQ">
             <objects>
                 <viewController id="l1U-3g-mQE" customClass="ShowBillDetailsViewController" customModule="C0775696_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
@@ -233,6 +234,7 @@
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hR5-1i-jho"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Customer Bill Details" id="HsU-aL-RN9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8T9-41-r5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
