@@ -9,19 +9,19 @@
 import UIKit
 
 class ShowBillDetailsViewController: UIViewController {
+    @IBOutlet weak var lblCustomerDetails: UILabel!
+    
+    @IBOutlet weak var lblFullName: UILabel!
+    @IBOutlet weak var lblCustEmail: UILabel!
+    
+    var customers: Customer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblCustomerDetails.text = customers?.customerID
+        lblFullName.text = customers?.fullName
+        lblCustEmail.text = customers?.emailID
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
