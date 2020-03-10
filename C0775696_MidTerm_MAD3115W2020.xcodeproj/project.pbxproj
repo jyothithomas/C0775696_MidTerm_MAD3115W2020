@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B20631B24184B520035EEF8 /* DetailedBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B20631A24184B520035EEF8 /* DetailedBillViewController.swift */; };
 		9B896B2C2410537F00E4F1C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B896B2B2410537F00E4F1C6 /* AppDelegate.swift */; };
 		9B896B2E2410537F00E4F1C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B896B2D2410537F00E4F1C6 /* SceneDelegate.swift */; };
 		9B896B302410537F00E4F1C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B896B2F2410537F00E4F1C6 /* LoginViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B20631A24184B520035EEF8 /* DetailedBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedBillViewController.swift; sourceTree = "<group>"; };
 		9B896B282410537F00E4F1C6 /* C0775696_MidTerm_MAD3115W2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = C0775696_MidTerm_MAD3115W2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B896B2B2410537F00E4F1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B896B2D2410537F00E4F1C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				9BFCF1C724183792007B7402 /* Internet.swift */,
 				9BFCF1C9241837CE007B7402 /* Hydro.swift */,
 				9BFCF1CB24183998007B7402 /* CalculateBill.swift */,
+				9B20631A24184B520035EEF8 /* DetailedBillViewController.swift */,
 			);
 			path = C0775696_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				9BC324572411D9E8003608EB /* Customer.swift in Sources */,
 				9BFCF1CC24183998007B7402 /* CalculateBill.swift in Sources */,
 				9BC49CC62411A55F009FEA2B /* CustomerListTableViewController.swift in Sources */,
+				9B20631B24184B520035EEF8 /* DetailedBillViewController.swift in Sources */,
 				9BC324592411DB07003608EB /* DataSingelton.swift in Sources */,
 				9BFCF1C824183792007B7402 /* Internet.swift in Sources */,
 				9BFCF1C624183724007B7402 /* Mobile.swift in Sources */,
