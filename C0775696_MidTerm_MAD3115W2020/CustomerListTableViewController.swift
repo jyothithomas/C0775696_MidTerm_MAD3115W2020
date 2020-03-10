@@ -57,9 +57,15 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
         {
             let c = customerNames[indexPath.row]
             print(c.fullName)
-            //self.performSegue(withIdentifier: "segueBillDetails", sender: self)
             let customers = DataSingelton.getInstance().getAllCustomers()
             let selectedCustomer = customers[indexPath.row]
+//            let sb1 = UIStoryboard(name: "Main", bundle: nil)
+//            let custListVC = sb1.instantiateViewController(identifier: "CustomerListVC") as CustomerListTableViewController
+//            custListVC.customerNames = customers
+//            self.navigationController?.popViewController(animated: true)
+            
+            //self.performSegue(withIdentifier: "segueBillDetails", sender: self)
+
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let custDetailsVC = sb.instantiateViewController(identifier: "custDetailsVC") as ShowBillDetailsViewController
             custDetailsVC.customers = selectedCustomer

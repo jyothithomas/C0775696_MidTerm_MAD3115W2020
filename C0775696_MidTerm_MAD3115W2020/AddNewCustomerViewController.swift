@@ -47,7 +47,8 @@ class AddNewCustomerViewController: UIViewController {
         {
         DataSingelton.getInstance().addCustomer(customer: Customer(customerID: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailID: newCustomerEmailId))
         }
-    
+        showMessage(message: "Customer added")
+        
     }
     
     func showAlertMessage(message: String)
@@ -57,6 +58,14 @@ class AddNewCustomerViewController: UIViewController {
         alert.addAction(okButton)
         self.present(alert, animated: true)
         
+    }
+    func showMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Done", message: message, preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
     }
     
     
