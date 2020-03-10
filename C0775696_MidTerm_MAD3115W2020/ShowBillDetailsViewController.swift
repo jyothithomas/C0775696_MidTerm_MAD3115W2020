@@ -13,7 +13,7 @@ class ShowBillDetailsViewController: UIViewController {
     
     @IBOutlet weak var lblFullName: UILabel!
     @IBOutlet weak var lblCustEmail: UILabel!
-    
+ 
     var customers: Customer?
     
     override func viewDidLoad() {
@@ -22,6 +22,13 @@ class ShowBillDetailsViewController: UIViewController {
         lblFullName.text = customers?.fullName
         lblCustEmail.text = customers?.emailID
     }
+    @IBAction func btnViewBills(_ sender: Any) {
+        
+        
+        
+    }
+    
+    
     
 
 }
