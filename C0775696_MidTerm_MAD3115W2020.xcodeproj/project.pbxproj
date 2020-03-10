@@ -23,6 +23,7 @@
 		9BFCF1C624183724007B7402 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF1C524183724007B7402 /* Mobile.swift */; };
 		9BFCF1C824183792007B7402 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF1C724183792007B7402 /* Internet.swift */; };
 		9BFCF1CA241837CE007B7402 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF1C9241837CE007B7402 /* Hydro.swift */; };
+		9BFCF1CC24183998007B7402 /* CalculateBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCF1CB24183998007B7402 /* CalculateBill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		9BFCF1C524183724007B7402 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9BFCF1C724183792007B7402 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		9BFCF1C9241837CE007B7402 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9BFCF1CB24183998007B7402 /* CalculateBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateBill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				9BFCF1C524183724007B7402 /* Mobile.swift */,
 				9BFCF1C724183792007B7402 /* Internet.swift */,
 				9BFCF1C9241837CE007B7402 /* Hydro.swift */,
+				9BFCF1CB24183998007B7402 /* CalculateBill.swift */,
 			);
 			path = C0775696_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				9BFCF1CA241837CE007B7402 /* Hydro.swift in Sources */,
 				9B896B302410537F00E4F1C6 /* LoginViewController.swift in Sources */,
 				9BC324572411D9E8003608EB /* Customer.swift in Sources */,
+				9BFCF1CC24183998007B7402 /* CalculateBill.swift in Sources */,
 				9BC49CC62411A55F009FEA2B /* CustomerListTableViewController.swift in Sources */,
 				9BC324592411DB07003608EB /* DataSingelton.swift in Sources */,
 				9BFCF1C824183792007B7402 /* Internet.swift in Sources */,

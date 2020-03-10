@@ -13,7 +13,7 @@ enum BillType
     case INTERNET, MOBILE, HYDRO, INSURANCE
 }
 
-class Bill
+class Bill: CalculateBill
 {
     
     var billID: String
