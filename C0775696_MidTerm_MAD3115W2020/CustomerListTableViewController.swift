@@ -30,6 +30,10 @@ class CustomerListTableViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tblCustomer.reloadData()
+    }
 }
 
 extension CustomerListTableViewController: UITableViewDataSource, UITableViewDelegate
@@ -60,7 +64,7 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
             let customers = DataSingelton.getInstance().getAllCustomers()
             let selectedCustomer = customers[indexPath.row]
 //            let sb1 = UIStoryboard(name: "Main", bundle: nil)
-//            let custListVC = sb1.instantiateViewController(identifier: "CustomerListVC") as CustomerListTableViewController
+            //            let custListVC = sb1.instantiateViewController(identifier: "CustomerListVC") as CustomerListTableViewController
 //            custListVC.customerNames = customers
 //            self.navigationController?.popViewController(animated: true)
             

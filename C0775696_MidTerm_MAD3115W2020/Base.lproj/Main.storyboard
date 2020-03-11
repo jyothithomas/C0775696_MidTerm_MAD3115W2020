@@ -206,7 +206,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Add Customer">
                                             <attributes>
-                                                <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                <font key="NSFont" metaFont="message" size="11"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -362,6 +362,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="J19-nw-hIm" id="mj0-r0-dO1"/>
+                                    <outlet property="delegate" destination="J19-nw-hIm" id="0Ja-i5-I7c"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
