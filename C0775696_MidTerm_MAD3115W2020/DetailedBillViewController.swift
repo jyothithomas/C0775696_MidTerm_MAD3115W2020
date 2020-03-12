@@ -11,12 +11,15 @@ import UIKit
 class DetailedBillViewController: UIViewController {
 
     @IBOutlet weak var tblDetailedBillview: UITableView!
-    var billList:[Bill] = []
+    var customer : Customer?
+    
+    var bills : [Bill] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.hidesBarsOnTap = true
-        self.navigationController?.title = "Bill Details"
+        self.bills = customer!.getAllbills()
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.title = "Customer Detailed Bills"
 
         // Do any additional setup after loading the view.
     }
@@ -27,18 +30,18 @@ extension DetailedBillViewController: UITableViewDataSource, UITableViewDelegate
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return billList.count
+       return bills.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailedBillcell")
-        let bill = billList[indexPath.row]
+        //let bill = bills[indexPath.row]
         
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let b = billList[indexPath.row]
+       // let b = bills[indexPath.row]
     }
     
 }

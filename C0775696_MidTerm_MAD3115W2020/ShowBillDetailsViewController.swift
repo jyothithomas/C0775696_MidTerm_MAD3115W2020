@@ -9,23 +9,41 @@
 import UIKit
 
 class ShowBillDetailsViewController: UIViewController {
+    var customer : Customer?
     @IBOutlet weak var lblCustomerDetails: UILabel!
     
     @IBOutlet weak var lblFullName: UILabel!
     @IBOutlet weak var lblCustEmail: UILabel!
- 
-    var customers: Customer?
-    var bill: Bill?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblCustomerDetails.text = customers?.customerID
-        lblFullName.text = customers?.fullName
-        lblCustEmail.text = customers?.emailID
+        showSelectedCustomerDetails()
     }
+    
     @IBAction func btnViewBills(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let DetailedBillVC = sb.instantiateViewController(identifier: "DetailedBillVC") as DetailedBillViewController
+        DetailedBillVC.customer = self.customer
+        navigationController?.pushViewController(DetailedBillVC, animated: true)
         
         
+    }
+    
+    func showSelectedCustomerDetails()
+    {
+        guard let customerID = self.customer?.customerID else {
+            return
+        }
+        guard let customerName = self.customer?.fullName else {
+            return
+        }
+        guard let customerEmail = self.customer?.emailID else {
+            return
+        }
+        
+        lblCustomerDetails.text = "ID : \(customerID)"
+        lblFullName.text = "Name : \(customerName)"
+        lblCustEmail.text = "Email ID : \(customerEmail)"
         
     }
     

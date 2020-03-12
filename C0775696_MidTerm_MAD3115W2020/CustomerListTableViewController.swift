@@ -63,24 +63,25 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
             print(c.fullName)
             let customers = DataSingelton.getInstance().getAllCustomers()
             let selectedCustomer = customers[indexPath.row]
-//            let sb1 = UIStoryboard(name: "Main", bundle: nil)
-            //            let custListVC = sb1.instantiateViewController(identifier: "CustomerListVC") as CustomerListTableViewController
-//            custListVC.customerNames = customers
-//            self.navigationController?.popViewController(animated: true)
-            
-            //self.performSegue(withIdentifier: "segueBillDetails", sender: self)
+
 
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let custDetailsVC = sb.instantiateViewController(identifier: "custDetailsVC") as ShowBillDetailsViewController
-            custDetailsVC.customers = selectedCustomer
+            custDetailsVC.customer = selectedCustomer
+            
+            
+            let DetailedBillVC = sb.instantiateViewController(identifier: "DetailedBillVC") as DetailedBillViewController
+            
+            custDetailsVC.customer = selectedCustomer
+            
+            DetailedBillVC.customer = selectedCustomer
+            
             self.navigationController?.pushViewController(custDetailsVC, animated: true)
-            
-            let sb1 = UIStoryboard(name: "Main", bundle: nil)
-                        let custListVC = sb1.instantiateViewController(identifier: "DetailedBillviewController") as DetailedBillViewController
+            //self.navigationController?.pushViewController(DetailedBillVC, animated: true)
             //custListVC.customerNames = customers
-            self.navigationController?.popViewController(animated: true)
+            //self.navigationController?.popViewController(animated: true)
             
-            self.performSegue(withIdentifier: "segueBillDetails", sender: self)
+            //self.performSegue(withIdentifier: "segueBillDetails", sender: self)
             
         }
     

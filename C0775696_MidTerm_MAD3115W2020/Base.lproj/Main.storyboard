@@ -206,7 +206,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Add Customer">
                                             <attributes>
-                                                <font key="NSFont" metaFont="label" size="11"/>
+                                                <font key="NSFont" metaFont="message" size="11"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -343,7 +343,7 @@
         <!--Detailed Bill View Controller-->
         <scene sceneID="wKG-Ql-IpE">
             <objects>
-                <viewController storyboardIdentifier="DetailedBillViewController" id="ZKF-vQ-1Kx" customClass="DetailedBillViewController" customModule="C0775696_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailedBillVC" id="ZKF-vQ-1Kx" customClass="DetailedBillViewController" customModule="C0775696_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J19-nw-hIm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -363,8 +363,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="J19-nw-hIm" id="mj0-r0-dO1"/>
-                                    <outlet property="delegate" destination="J19-nw-hIm" id="0Ja-i5-I7c"/>
+                                    <outlet property="dataSource" destination="J19-nw-hIm" id="kY2-aU-E1C"/>
+                                    <outlet property="delegate" destination="J19-nw-hIm" id="LXe-Pb-0r7"/>
                                 </connections>
                             </tableView>
                         </subviews>
