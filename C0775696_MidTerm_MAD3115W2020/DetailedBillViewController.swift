@@ -60,16 +60,15 @@ extension DetailedBillViewController: UITableViewDataSource, UITableViewDelegate
             cell.imbBilltype.image = UIImage(named:"internet")
             cell.lblBillID.text = " Bill Id: \(bill.billID)"
             cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
-            cell.lblBillAmount.text = " Bill Amount: \(bill.billAmount)"
+            cell.lblBillAmount.text = " Bill Amount: \(bill.calculateTotalBill())"
         }
         else if bill.billType == .MOBILE
         {
             cell.imbBilltype.image = UIImage(named:"mob")
             cell.lblBillID.text = " Bill Id: \(bill.billID)"
             cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
-            cell.lblBillAmount.text = " Bill Amount: \(bill.billAmount)"
+            cell.lblBillAmount.text = " Bill Amount: \(bill.calculateTotalBill())"
         }
-            
         else
         {
             showAlertMessage(message: "No Valid Bill type matched")

@@ -21,10 +21,17 @@ class ShowBillDetailsViewController: UIViewController {
     }
     
     @IBAction func btnViewBills(_ sender: Any) {
+        if customer?.bills.count != 0
+        {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let DetailedBillVC = sb.instantiateViewController(identifier: "DetailedBillVC") as DetailedBillViewController
         DetailedBillVC.customer = self.customer
         navigationController?.pushViewController(DetailedBillVC, animated: true)
+        }
+        else
+        {
+            showAlertMessage(message: "This customer has no bills")
+        }
         
         
     }
@@ -44,6 +51,14 @@ class ShowBillDetailsViewController: UIViewController {
         lblCustomerDetails.text = "ID : \(customerID)"
         lblFullName.text = "Name : \(customerName)"
         lblCustEmail.text = "Email ID : \(customerEmail)"
+        
+    }
+    func showAlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Sorry", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
         
     }
     
