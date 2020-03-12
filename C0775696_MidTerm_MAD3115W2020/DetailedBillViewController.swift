@@ -12,6 +12,7 @@ class DetailedBillViewController: UIViewController {
 
     @IBOutlet weak var tblDetailedBillview: UITableView!
 
+    @IBOutlet weak var lblTotalBill: UILabel!
     
     var customer : Customer?
     
@@ -22,6 +23,7 @@ class DetailedBillViewController: UIViewController {
         self.bills = customer!.getAllbills()
         //self.navigationItem.hidesBackButton = true
         self.navigationItem.title = "Customer Detailed Bills"
+        self.lblTotalBill.text = String(format:"Total Bill $%.2f",customer?.calculateTotalBill() ?? "")
 
         // Do any additional setup after loading the view.
     }

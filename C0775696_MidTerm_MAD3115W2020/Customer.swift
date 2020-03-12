@@ -50,9 +50,11 @@ class Customer
         
     }
     
-    func calculateTotalBill() {
-        for i in bills {
-            totalBillToPay = totalBillToPay + i.value.billAmount
+    func calculateTotalBill() -> Double {
+        var dummyTotalBillToPay = 0.0
+        for i in bills{
+          dummyTotalBillToPay += i.value.billAmount
         }
+        return dummyTotalBillToPay
     }
 }
