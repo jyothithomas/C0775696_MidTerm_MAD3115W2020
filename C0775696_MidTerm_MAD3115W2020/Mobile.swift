@@ -25,10 +25,13 @@ class Mobile: Bill
         self.internetGBUsed=internetGBUsed
         self.minuteUsed=minuteUsed
         super.init(billID: billID, billDate: billDate, billType: billType)
+        self.billAmount = calculateTotalBill()
     }
     
-    override func calculateTotalBill()
+    override func calculateTotalBill() -> Double
     {
         self.billAmount = internetGBUsed*ratePerGB + Double(minuteUsed)*ratePerMinute
+        
+        return billAmount
     }
 }
