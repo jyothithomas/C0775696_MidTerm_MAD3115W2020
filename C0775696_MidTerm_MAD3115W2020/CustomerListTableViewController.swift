@@ -74,6 +74,14 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
             let custDetailsVC = sb.instantiateViewController(identifier: "custDetailsVC") as ShowBillDetailsViewController
             custDetailsVC.customers = selectedCustomer
             self.navigationController?.pushViewController(custDetailsVC, animated: true)
+            
+            let sb1 = UIStoryboard(name: "Main", bundle: nil)
+                        let custListVC = sb1.instantiateViewController(identifier: "DetailedBillviewController") as DetailedBillViewController
+            //custListVC.customerNames = customers
+            self.navigationController?.popViewController(animated: true)
+            
+            self.performSegue(withIdentifier: "segueBillDetails", sender: self)
+            
         }
     
     }

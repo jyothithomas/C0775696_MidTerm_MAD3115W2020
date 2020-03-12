@@ -15,6 +15,7 @@ class ShowBillDetailsViewController: UIViewController {
     @IBOutlet weak var lblCustEmail: UILabel!
  
     var customers: Customer?
+    var bill: Bill?
     
     override func viewDidLoad() {
         super.viewDidLoad()

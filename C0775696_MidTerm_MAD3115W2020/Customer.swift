@@ -40,6 +40,16 @@ class Customer
         print("Bill removed with ID \(billID)")
     }
     
+    func getAllbills() -> [Bill]
+    {
+        var allBills = [Bill] ()
+        for bill in bills {
+            allBills.append(bill.value)
+        }
+        return allBills
+        
+    }
+    
     func calculateTotalBill() {
         for i in bills {
             totalBillToPay = totalBillToPay + i.value.billAmount
