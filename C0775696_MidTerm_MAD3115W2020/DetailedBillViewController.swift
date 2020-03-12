@@ -48,6 +48,7 @@ extension DetailedBillViewController: UITableViewDataSource, UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "BillTableViewCell") as! BillTableViewCell
         
         let bill = bills[indexPath.row]
+        
         if bill.billType == .HYDRO
         {
             cell.imbBilltype.image = UIImage(named:"hydro")
@@ -60,14 +61,14 @@ extension DetailedBillViewController: UITableViewDataSource, UITableViewDelegate
             cell.imbBilltype.image = UIImage(named:"internet")
             cell.lblBillID.text = " Bill Id: \(bill.billID)"
             cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
-            cell.lblBillAmount.text = " Bill Amount: \(bill.calculateTotalBill())"
+            cell.lblBillAmount.text = " Bill Amount: \(bill.billAmount)"
         }
         else if bill.billType == .MOBILE
         {
             cell.imbBilltype.image = UIImage(named:"mob")
             cell.lblBillID.text = " Bill Id: \(bill.billID)"
             cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
-            cell.lblBillAmount.text = " Bill Amount: \(bill.calculateTotalBill())"
+            cell.lblBillAmount.text = " Bill Amount: \(bill.billAmount)"
         }
         else
         {

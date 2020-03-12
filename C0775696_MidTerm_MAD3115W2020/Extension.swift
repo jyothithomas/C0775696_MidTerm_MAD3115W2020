@@ -21,6 +21,15 @@ extension String{
         let mobileTest = NSPredicate(format: "SELF MATCHES %@", mobileNumberRegEx)
         return mobileTest.evaluate(with: self)
     }
+    
+    func showAlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Sorry", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+        
+    }
 }
 //http://brainwashinc.com/2017/07/21/loading-activity-indicator-ios-swift/
 var vSpinner : UIView?
