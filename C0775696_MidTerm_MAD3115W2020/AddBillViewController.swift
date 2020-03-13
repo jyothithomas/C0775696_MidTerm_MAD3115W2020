@@ -11,50 +11,17 @@ import UIKit
 class AddBillViewController: UIViewController {
     var customer: Customer?
     
-    @IBOutlet weak var lblBillDate: UILabel!
-    @IBOutlet weak var lblBillID: UILabel!
-    @IBOutlet weak var lblInternetGBUsed: UILabel!
-    @IBOutlet weak var lblInternetProvider: UILabel!
-    
-    @IBOutlet weak var lblMobileManufacturer: UILabel!
-    
-    @IBOutlet weak var lblMobilePlan: UILabel!
-    
-    @IBOutlet weak var lblMobileNumber: UILabel!
-    
-    @IBOutlet weak var lblMobileGBUsed: UILabel!
-    
-    @IBOutlet weak var lblMobileMinuteUsed: UILabel!
-    
-    @IBOutlet weak var lblHydroAgency: UILabel!
-    
-    @IBOutlet weak var lblHydroUnitConsumed: UILabel!
-    
     @IBOutlet weak var txtBillID: UITextField!
-    
     @IBOutlet weak var txtBillDate: UITextField!
     @IBOutlet weak var txtInternetProviderName: UITextField!
-    
     @IBOutlet weak var txtInternetGBUsed: UITextField!
-    
     @IBOutlet weak var txtMobileManufacturer: UITextField!
-    
     @IBOutlet weak var txtMobilePlan: UITextField!
     @IBOutlet weak var txtMobileNumber: UITextField!
     @IBOutlet weak var txtMobileGBUsed: UITextField!
-    
     @IBOutlet weak var txtMobileMinuteUsed: UITextField!
-    
     @IBOutlet weak var txtHydroAgency: UITextField!
-    
     @IBOutlet weak var txtHydroUnitConsumed: UITextField!
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Add New Bill"
@@ -66,6 +33,12 @@ class AddBillViewController: UIViewController {
         
         if sender.selectedSegmentIndex == 0
         {
+            
+            txtMobilePlan.isHidden = true
+            txtMobileGBUsed.isHidden = true
+            txtMobileGBUsed.isHidden = true
+            txtMobileNumber.isHidden = true
+            txtMobileManufacturer.isHidden = true
             
         }
         
