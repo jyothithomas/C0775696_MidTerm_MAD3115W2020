@@ -84,6 +84,7 @@ extension DetailedBillViewController: UITableViewDataSource, UITableViewDelegate
             cell.imbBilltype.image = UIImage(named:"mob")
             cell.lblBillID.text = " Bill Id: \(bill.billID)"
             cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
+
             cell.lblBillAmount.text = " Bill Amount: $\(bill.billAmount)"
         }
         else

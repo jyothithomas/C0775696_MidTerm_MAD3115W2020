@@ -17,5 +17,4 @@ class BillTableViewCell: UITableViewCell {
     @IBOutlet weak var lblBillDate: UILabel!
    
     @IBOutlet weak var lblBillAmount: UILabel!
-    
 }
