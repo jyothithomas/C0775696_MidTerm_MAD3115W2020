@@ -11,6 +11,8 @@ import UIKit
 class AddBillViewController: UIViewController, UITextFieldDelegate {
     var customer: Customer?
     
+    @IBOutlet weak var segmentBillTypeVar: UISegmentedControl!
+    
     @IBOutlet weak var txtBillID: UITextField!
     @IBOutlet weak var txtBillDate: UITextField!
     var datePicker: UIDatePicker!
@@ -127,7 +129,17 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func btnAddBill(_ sender: Any) {
-        //customer?.addBill(bill:, billID: <#T##String#>)
+        
+        if segmentBillTypeVar.selectedSegmentIndex == 0
+        {
+            let tempBillObj = Hydro(billID: txtBillID.text!, billDate: (txtBillDate.text?.toDate())!, billType: BillType.HYDRO, agencyName: txtHydroAgency.text!, unitConsumed: Int(txtHydroUnitConsumed.text!) ?? Int(0.0))
+            customer?.addBill(bill: tempBillObj, billID: txtBillID.text!)
+        }
+        else if segmentBillTypeVar.selectedSegmentIndex == 1
+        {
+            let tempBillObj = Internet(billID: <#T##String#>, billDate: <#T##Date#>, billType: <#T##BillType#>, providerName: <#T##String#>, internetGBUsed: <#T##Double#>)
+        }
+        
         
         
         

@@ -524,6 +524,7 @@
                         <viewLayoutGuide key="safeArea" id="PZM-lh-9tX"/>
                     </view>
                     <connections>
+                        <outlet property="segmentBillTypeVar" destination="JcE-Iv-8Ji" id="WSM-Ta-bBn"/>
                         <outlet property="txtBillDate" destination="Mo3-85-4rU" id="sse-s9-kPm"/>
                         <outlet property="txtBillID" destination="eeN-kP-M5P" id="Hye-K3-Pi8"/>
                         <outlet property="txtHydroAgency" destination="0VP-EB-Svc" id="i2Z-zm-smW"/>
