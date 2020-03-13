@@ -153,12 +153,6 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
         let DetailedBillVC = sb.instantiateViewController(identifier: "DetailedBillVC") as DetailedBillViewController
         DetailedBillVC.customer = self.customer
         navigationController?.pushViewController(DetailedBillVC, animated: true)
-        
-        
-        
-        
-        
-        
     }
     
 }
