@@ -28,7 +28,6 @@ class CustomerListTableViewController: UIViewController {
            lblWelcome.text =  "Welcome, \(username)"
         }
 
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,8 +52,6 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
             
             let customer = customerNames[indexPath.row]
             cell?.textLabel?.text = customer.fullName
-            //cell?.detailTextLabel?.text = customer.
-            //cell?.imageView?.image = country.flag
             return cell!
         }
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
@@ -77,23 +74,5 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
             DetailedBillVC.customer = selectedCustomer
             
             self.navigationController?.pushViewController(custDetailsVC, animated: true)
-            //self.navigationController?.pushViewController(DetailedBillVC, animated: true)
-            //custListVC.customerNames = customers
-            //self.navigationController?.popViewController(animated: true)
-            
-            //self.performSegue(withIdentifier: "segueBillDetails", sender: self)
-            
         }
-    
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */

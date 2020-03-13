@@ -206,7 +206,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Add Customer">
                                             <attributes>
-                                                <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                <font key="NSFont" metaFont="menu" size="11"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -428,13 +428,24 @@
                     <view key="view" contentMode="scaleToFill" id="MmS-vf-y2Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JcE-Iv-8Ji">
+                                <rect key="frame" x="68" y="122" width="238" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Hydro"/>
+                                    <segment title="Internet"/>
+                                    <segment title="Mobile"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PZM-lh-9tX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8BO-dN-31m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4422" y="139"/>
+            <point key="canvasLocation" x="4421.739130434783" y="138.61607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iSL-yz-MWx">
