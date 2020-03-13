@@ -11,13 +11,9 @@ import  UIKit
 
 extension String{
     
-    func toDate(withFormat format: String = "MMM dd, yyyy") -> Date {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = format
-    guard let date = dateFormatter.date(from: self) else {
-      preconditionFailure("Take a look to your format")
-    }
-    return date
+    
+        
+        
     func emailValid() -> Bool{      //https://stackoverflow.com/questions/27998409/email-phone-validation-in-swift
         let emailRegEx = "[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
@@ -29,6 +25,14 @@ extension String{
         let mobileTest = NSPredicate(format: "SELF MATCHES %@", mobileNumberRegEx)
         return mobileTest.evaluate(with: self)
     }
+    func toDate(withFormat format: String = "MMM dd, yyyy") -> Date {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = format
+    guard let date = dateFormatter.date(from: self) else {
+      preconditionFailure("Take a look to your format")
+    
+        }
+        return date
     
     
 }

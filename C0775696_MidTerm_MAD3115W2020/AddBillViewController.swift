@@ -132,13 +132,29 @@ class AddBillViewController: UIViewController, UITextFieldDelegate {
         
         if segmentBillTypeVar.selectedSegmentIndex == 0
         {
-            let tempBillObj = Hydro(billID: txtBillID.text!, billDate: (txtBillDate.text?.toDate())!, billType: BillType.HYDRO, agencyName: txtHydroAgency.text!, unitConsumed: Int(txtHydroUnitConsumed.text!) ?? Int(0.0))
-            customer?.addBill(bill: tempBillObj, billID: txtBillID.text!)
+            let addBillObj = Hydro(billID: txtBillID.text!, billDate: (txtBillDate.text?.toDate())!, billType: BillType.HYDRO, agencyName: txtHydroAgency.text!, unitConsumed: Int(txtHydroUnitConsumed.text!)!)
+            customer?.addBill(bill: addBillObj, billID: txtBillID.text!)
         }
         else if segmentBillTypeVar.selectedSegmentIndex == 1
         {
-            let tempBillObj = Internet(billID: <#T##String#>, billDate: <#T##Date#>, billType: <#T##BillType#>, providerName: <#T##String#>, internetGBUsed: <#T##Double#>)
+            let addBillObj = Internet(billID: txtBillID.text!, billDate: (txtBillDate.text?.toDate())!, billType: BillType.INTERNET, providerName: txtInternetProviderName.text!, internetGBUsed: Double(txtInternetGBUsed.text!)!)
+            
+            customer?.addBill(bill:addBillObj, billID: txtBillID.text!)
         }
+        else if segmentBillTypeVar.selectedSegmentIndex == 2
+        
+        {
+            let addBillobj = Mobile(billID: txtBillID.text!, billDate: (txtBillDate.text?.toDate())!, billType: BillType.MOBILE, mobileManufacturerName: txtMobileManufacturer.text!, planName: txtMobilePlan.text!, mobileNumber: txtMobileNumber.text!, internetGBUsed: Double(txtMobileGBUsed.text!)!, minuteUsed: Int(txtMobileMinuteUsed.text!)!)
+            
+            customer?.addBill(bill: addBillobj, billID: txtBillID.text!)
+        }
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let DetailedBillVC = sb.instantiateViewController(identifier: "DetailedBillVC") as DetailedBillViewController
+        DetailedBillVC.customer = self.customer
+        navigationController?.pushViewController(DetailedBillVC, animated: true)
+        
+        
         
         
         
