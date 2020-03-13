@@ -206,7 +206,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Add Customer">
                                             <attributes>
-                                                <font key="NSFont" metaFont="menu" size="11"/>
+                                                <font key="NSFont" metaFont="message" size="11"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -437,14 +437,10 @@
                                     <segment title="Internet"/>
                                     <segment title="Mobile"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentbilltype:" destination="HT3-1j-I7S" eventType="valueChanged" id="AVm-C1-4Pu"/>
+                                </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Internet GB Used:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H72-l9-ixL">
-                                <rect key="frame" x="30" y="284" width="146" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Internet providerName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCU-w9-Oan">
                                 <rect key="frame" x="30" y="242" width="192" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -590,10 +586,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Internet GB Used:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H72-l9-ixL">
+                                <rect key="frame" x="27" y="287" width="146" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PZM-lh-9tX"/>
                     </view>
+                    <connections>
+                        <outlet property="lblBillDate" destination="wab-A7-u1I" id="LYB-Is-CMT"/>
+                        <outlet property="lblBillID" destination="G09-Nq-8UL" id="aUo-rX-WNX"/>
+                        <outlet property="lblHydroAgency" destination="h2c-mc-e9a" id="3sV-YV-1F7"/>
+                        <outlet property="lblHydroUnitConsumed" destination="OFj-RS-FVP" id="fmq-LD-YTx"/>
+                        <outlet property="lblInternetGBUsed" destination="H72-l9-ixL" id="OYJ-fu-ebN"/>
+                        <outlet property="lblInternetProvider" destination="DCU-w9-Oan" id="NNj-5B-bWY"/>
+                        <outlet property="lblMobileGBUsed" destination="DWe-QQ-MKA" id="OKm-fi-3GM"/>
+                        <outlet property="lblMobileManufacturer" destination="0Ri-n2-P1A" id="6Wu-d1-BoM"/>
+                        <outlet property="lblMobileMinuteUsed" destination="Hey-Tg-NrA" id="0qu-Ze-PAB"/>
+                        <outlet property="lblMobileNumber" destination="ihz-8R-Bnm" id="Yhi-ak-Axm"/>
+                        <outlet property="lblMobilePlan" destination="g5v-oc-puI" id="fxx-QT-edn"/>
+                        <outlet property="txtBillDate" destination="Mo3-85-4rU" id="sse-s9-kPm"/>
+                        <outlet property="txtBillID" destination="eeN-kP-M5P" id="Hye-K3-Pi8"/>
+                        <outlet property="txtHydroAgency" destination="0VP-EB-Svc" id="i2Z-zm-smW"/>
+                        <outlet property="txtHydroUnitConsumed" destination="LkP-5U-JqO" id="o0J-6P-I76"/>
+                        <outlet property="txtInternetGBUsed" destination="vwy-AN-bWi" id="ugd-dn-q2s"/>
+                        <outlet property="txtInternetProviderName" destination="QpE-xR-hUM" id="H3G-2r-xH4"/>
+                        <outlet property="txtMobileGBUsed" destination="nui-my-7uj" id="G4b-fc-KEk"/>
+                        <outlet property="txtMobileManufacturer" destination="63I-o0-Qfe" id="nsV-wT-jnD"/>
+                        <outlet property="txtMobileMinuteUsed" destination="ehK-g2-AvV" id="VG6-GK-yR0"/>
+                        <outlet property="txtMobileNumber" destination="GNE-gm-vRp" id="NuF-4D-cAB"/>
+                        <outlet property="txtMobilePlan" destination="eeU-99-OJa" id="FVz-H0-JDV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8BO-dN-31m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
