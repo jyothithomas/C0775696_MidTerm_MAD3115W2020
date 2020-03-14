@@ -25,7 +25,7 @@ class CustomerListTableViewController: UIViewController {
         
         if let username = userDefault.string(forKey: "userEmail")
         {
-           lblWelcome.text =  "Welcome, \(username)"
+           lblWelcome.text =  "Admin:\(username)"
         }
 
     }
